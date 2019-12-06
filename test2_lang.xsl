@@ -4,6 +4,6 @@
       XSLT Version: <xsl:value-of select="system-property('xsl:version')"/>
       XSLT Vendor: <xsl:value-of select="system-property('xsl:vendor')"/>
       XSLT Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')"/>
-      <xsl:value-of select="system-property('xsl:vendor-url')"/>
+      XSLT file: <xsl:value-of select="system-property('xsl:vendor-url')"/>
     </xsl:template>
 </xsl:stylesheet>
