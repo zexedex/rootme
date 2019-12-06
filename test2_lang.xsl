@@ -1,7 +1,11 @@
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="/">
-        XSLT Version: <xsl:value-of select="system-property('xsl:version')"/>
-        XSLT Vendor: <xsl:value-of select="system-property('xsl:vendor')"/>
-        XSLT Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')"/>
-    </xsl:template>
-</xsl:stylesheet>
+<?xml version='1.0'?>
+	<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+		<xsl:output method="html"/>
+		<xsl:template match="/">
+			<html>
+			<body>
+			<h3>unparsed-entity-uri()</h3>
+			<ul><li><b>unparsed-entity-uri('currentpath')</b> = <xsl:value-of select="unparsed-entity-uri('currentpath')"/></li></ul>
+			</body></html>
+		</xsl:template>
+	</xsl:stylesheet>
